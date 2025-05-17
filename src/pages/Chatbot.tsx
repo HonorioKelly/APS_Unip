@@ -4,8 +4,12 @@ import { ChatInterface } from "@/components/chatbot/ChatInterface";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Bot, Info, Link, Search, Leaf } from "lucide-react"; // Adicionado Leaf aqui
 
+//Responsavel por exibir a interface do assistente virtual. 
+
+// Componente principal da página do chatbot
 const Chatbot = () => {
   return (
+   // requireAuth -> é necessario que o usuário esté autenticado para acesso 
     <Layout requireAuth>
       <div className="container py-6 space-y-6">
         <div className="flex flex-col gap-2">
@@ -14,7 +18,6 @@ const Chatbot = () => {
             Tire suas dúvidas sobre os dados ambientais com nosso assistente virtual e acesse informações precisas.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-2">
             <ChatInterface />

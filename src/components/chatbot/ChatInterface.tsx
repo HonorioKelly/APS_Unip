@@ -13,6 +13,8 @@ import {
   chatbotMenuOptions, 
 } from "@/utils/chatbotData";
 
+//Componente principal para funcionamento do chatbot interagir com o usuário
+
 // Define o tipo de mensagem usada no chat
 type Message = {
   id: string;
